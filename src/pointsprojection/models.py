@@ -6,7 +6,7 @@ from pointsprojection import evaluate, features
 
 def buildxgboost(training_rows, val_rows, feat_cols, tar_col):
     #Initialize Regressor
-    model = xbg.XGBRegressor(
+    model = xgb.XGBRegressor(
         n_estimators = 1000,
         learning_rate = 0.01,
         max_depth = 5,
@@ -21,11 +21,11 @@ def buildxgboost(training_rows, val_rows, feat_cols, tar_col):
         
     
 def buildridgeregression(training_rows, val_rows, feat_cols, tar_col):
-
+    pass
 
 def buildneuralnet(training_rows, val_rows, feat_cols, tar_col): 
-
+    pass
 
 def buildbaseline(training_rows, val_rows, feat_cols, tar_col):
-
+    pass
     
