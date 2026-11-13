@@ -5,3 +5,4 @@ libtest.ipynb
 data/
 *.egg-info
 */__pycache__/*
+__pycache__
