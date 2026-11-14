@@ -11,11 +11,11 @@ def buildxgboost(training_rows, val_rows, feat_cols, tar_col):
         learning_rate = 0.01,
         max_depth = 5,
         objective = 'reg:squarederror',
-        random_state = 42
+        random_state = 42,
+        early_stopping_rounds = 30,
     )
     model.fit(
         
-        early_stopping_rounds = 30,
         verbose=False
     )
         
